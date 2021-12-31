@@ -1,0 +1,23 @@
+13States Mono
+Clock:              2ps
+Worst slack:        17.6ps
+Movable Cell Area:  108mm
+Total power:        109.396080uw
+
+13StatesMulti
+Clock:              2ps
+Worst slack:        15.0ps
+Movable Cell Area:  162mm
+Total power:        446.965820uw
+
+design14253
+Clock:              2ps
+Worst slack:        18.5ps
+Movable Cell Area:  143mm
+Total power:        348.814606uw
+
+seq_monocheck
+Clock:              2ps
+Worst slack:        32.8ps
+Movable Cell Area:  97mm
+Total power:        95.655411uw
