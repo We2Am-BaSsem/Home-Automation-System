@@ -23,36 +23,32 @@ module integ(
   localparam S5 = 3'b100;
 
 
-  always @(negedge Clk)
+  always @(posedge Clk)
   begin
+    {out, display} <= 0;
+
     if(Rst) begin
       State <= S1;
-      display <= 0;
-      out <= 0;
     end
 
     else begin
 
-{out, display} <= 0;
+    State <= State + 1;
 
       case(State)
         S1: begin
-          State <= S2;
           if(SFD) {out, display} <= 1 | (1<<8);
            
         end
         S2: begin
-          State <= S3;
           if(SRD) {out, display} <= 2 | (1<<7);
            
        end
         S3: begin
-          State <= S4;
           if(SFA) {out, display} <= 3 | (1<<6);
            
         end
         S4: begin
-          State <= S5;
           if(SW)  {out, display} <= 4 | (1<<5);
            
         end
