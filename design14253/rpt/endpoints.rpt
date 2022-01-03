@@ -2,17 +2,17 @@ Report End Points:
 -----+-------+------+-------+------+-----+-----+------+--------------+----------------
      |Group  |Launch|Capture|Shift |Delay|Depth|Slack |Begin Point   |End Point       
 -----+-------+------+-------+------+-----+-----+------+--------------+----------------
-1    |default|sysclk|sysclk |2000.0|235.9|    8|1591.7|State_reg[1]/Q|out_reg[1]/D    
-2    |default|sysclk|sysclk |2000.0|235.9|    8|1591.7|State_reg[1]/Q|out_reg[0]/D    
-3    |default|sysclk|sysclk |2000.0|200.7|    7|1592.8|State_reg[1]/Q|display_reg[0]/D
+1    |default|sysclk|sysclk |1500.0|309.6|    7|1044.3|State_reg[2]/Q|out_reg[5]/D    
+2    |default|sysclk|sysclk |1500.0|263.3|    7|1087.0|State_reg[2]/Q|display_reg[0]/D
+3    |default|sysclk|sysclk |1500.0|220.2|    6|1089.8|State_reg[0]/Q|out_reg[1]/D    
 -----+-------+------+-------+------+-----+-----+------+--------------+----------------
 Report End Points: 
 -----+-----+--------------+-------+------+-----+-----+-----+-----------+----------------
      |Group|Launch        |Capture|Shift |Delay|Depth|Slack|Begin Point|End Point       
 -----+-----+--------------+-------+------+-----+-----+-----+-----------+----------------
-1    |I2R  |rtDefaultClock|sysclk |1000.0|241.5|    8| 18.5|ST[4]      |out_reg[3]/D    
-2    |I2R  |rtDefaultClock|sysclk |1000.0|242.1|    8| 19.9|ST[4]      |out_reg[2]/D    
-3    |I2R  |rtDefaultClock|sysclk |1000.0|238.0|    4| 20.2|SRD        |display_reg[1]/D
+1    |I2R  |rtDefaultClock|sysclk |1500.0|371.9|    8|397.7|ST[4]      |out_reg[2]/D    
+2    |I2R  |rtDefaultClock|sysclk |1500.0|299.0|    6|470.6|ST[4]      |out_reg[5]/D    
+3    |I2R  |rtDefaultClock|sysclk |1500.0|256.6|    6|501.6|ST[2]      |display_reg[1]/D
 -----+-----+--------------+-------+------+-----+-----+-----+-----------+----------------
 Report End Points: 
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
@@ -24,7 +24,7 @@ Report End Points:
 -----+-----+------+-------+------+-----+-----+-----+------------+---------
      |Group|Launch|Capture|Shift |Delay|Depth|Slack|Begin Point |End Point
 -----+-----+------+-------+------+-----+-----+-----+------------+---------
-1    |R2O  |sysclk|vsysclk|1000.0|  0.4|    0|573.4|out_reg[5]/Q|fdoor    
-2    |R2O  |sysclk|vsysclk|1000.0|  0.4|    0|573.5|out_reg[4]/Q|rdoor    
-3    |R2O  |sysclk|vsysclk|1000.0|  0.4|    0|573.7|out_reg[3]/Q|alarmbuzz
+1    |R2O  |sysclk|vsysclk|1500.0|  0.4|    0|934.8|out_reg[1]/Q|heater   
+2    |R2O  |sysclk|vsysclk|1500.0|  0.4|    0|934.9|out_reg[2]/Q|winbuzz  
+3    |R2O  |sysclk|vsysclk|1500.0|  0.4|    0|934.9|out_reg[0]/Q|cooler   
 -----+-----+------+-------+------+-----+-----+-----+------------+---------

@@ -43,7 +43,7 @@ module integ(
   localparam S13 = 4'b1100;
 
 
-  always @(negedge Clk)
+  always @(posedge Clk)
   begin
     if(Rst) begin
       State <= S1;
