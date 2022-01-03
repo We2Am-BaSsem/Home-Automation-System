@@ -107,7 +107,7 @@ function [8:0] _F1(input SFD);
   endfunction
 
 
-  always @(negedge Clk)
+  always @(posedge Clk)
   begin
     if(Rst) begin
       State <= S1;

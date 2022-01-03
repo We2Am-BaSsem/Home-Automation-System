@@ -88,7 +88,7 @@ module integ(
 
 
 
-  always @(negedge Clk)
+  always @(posedge Clk)
   begin
     if(Rst) begin
       State <= S1;
