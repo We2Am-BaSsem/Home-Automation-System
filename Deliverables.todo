@@ -2,7 +2,7 @@ Delivrables:
     ✔ All verilog/vhdl code files. @done (1/3/2022, 11:22:14 AM)
     ✔ do file or testbench for testcases testing the design. @done (1/3/2022, 11:22:15 AM)
     ✔ A screenshot of the pre-synthesis simulation results. @done (1/3/2022, 11:22:17 AM)
-    ☐ Oasys synthesis scripts, libraries and constraints files.
+    ✔ Oasys synthesis scripts, libraries and constraints files. @done (1/3/2022, 12:47:24 PM)
     ☐ Oasys synthesis output folder (must include all reports and netlist file).
     ✔ A screenshot of the schematic of the design after synthesis from oasys. @done (1/3/2022, 11:22:43 AM)
     ☐ Post synthesis simulation library used.
