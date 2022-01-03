@@ -1,0 +1,19 @@
+Delivrables:
+    ✔ All verilog/vhdl code files. @done (1/3/2022, 11:22:14 AM)
+    ✔ do file or testbench for testcases testing the design. @done (1/3/2022, 11:22:15 AM)
+    ✔ A screenshot of the pre-synthesis simulation results. @done (1/3/2022, 11:22:17 AM)
+    ☐ Oasys synthesis scripts, libraries and constraints files.
+    ☐ Oasys synthesis output folder (must include all reports and netlist file).
+    ✔ A screenshot of the schematic of the design after synthesis from oasys. @done (1/3/2022, 11:22:43 AM)
+    ☐ Post synthesis simulation library used.
+    ✔ A screenshot of the post-synthesis simulation results. @done (1/3/2022, 11:22:20 AM)
+    ☐ Nitro floorplanning, placement and routing scripts.
+    ☐ Nitro saved design after performing floorplanning, placement and routing.
+    ☐ A screenshot for the chip schematic as it appears in nitro after performing floorplanning, placement and routing.
+    A document containing the following:
+        ✔ a-Schematic/Figure of your design. @done (1/3/2022, 11:23:22 AM)
+        ☐ b-Any screenshot required above (from 1-11).
+        ☐ c-Screenshots for these synthesis reports: design, path and power.
+        ☐ d-Supply a brief justification why you choose this current design specially in terms of optimizing area, time and power.
+        ☐ e-The score obtained for your chosen design using the following equation:
+                0.5*Movable Cell Area in squm+0.3*(clock period in ps-worst case slack in ps)+0.2*total power in uw
