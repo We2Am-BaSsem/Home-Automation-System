@@ -12,8 +12,8 @@ Delivrables:
     ☐ A screenshot for the chip schematic as it appears in nitro after performing floorplanning, placement and routing.
     A document containing the following:
         ✔ a-Schematic/Figure of your design. @done (1/3/2022, 11:23:22 AM)
-        ☐ b-Any screenshot required above (from 1-11).
-        ☐ c-Screenshots for these synthesis reports: design, path and power.
-        ☐ d-Supply a brief justification why you choose this current design specially in terms of optimizing area, time and power.
-        ☐ e-The score obtained for your chosen design using the following equation:
-                0.5*Movable Cell Area in squm+0.3*(clock period in ps-worst case slack in ps)+0.2*total power in uw
+        ✔ b-Any screenshot required above (from 1-11). @done (1/3/2022, 11:31:37 AM)
+        ✔ c-Screenshots for these synthesis reports: design, path and power. @done (1/3/2022, 11:32:39 AM)
+        ✔ d-Supply a brief justification why you choose this current design specially in terms of optimizing area, time and power. @done (1/3/2022, 12:35:04 PM)
+        ✔ e-The score obtained for your chosen design using the following equation: @done (1/3/2022, 12:35:07 PM)
+                (0.5*Movable Cell Area in squm+0.3*(clock period in ps-worst case slack in ps)+0.2*total power in uw)
