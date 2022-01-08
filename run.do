@@ -16,7 +16,7 @@ sim:/integ/heater \
 sim:/integ/cooler \
 sim:/integ/display
 
-force -freeze sim:/integ/Clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/integ/Clk 0 0, 1 {50 ps} -r 100
 force -freeze sim:/integ/Rst 1 0
 force -freeze sim:/integ/SFD 0 0
 force -freeze sim:/integ/SRD 0 0
