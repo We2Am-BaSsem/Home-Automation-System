@@ -255,6 +255,8 @@ Weighted Metrics according to Formula
 
 </div>
 
+  <br/>
+
 <div align="center">
   
   ![Weighted Scores according to Formula](<./Stats/WeightedScore.JPG>)
