@@ -57,7 +57,7 @@ We worked on 4 different designs with resonable assumptions to solve this proble
 <div align="center">
   13 States Mono Schema
 </div>
-
+<br/>
 Rather than checking the sensors on each cycle based on their priority, we check the sensors on 13 cycles, with each sensor having a higher weight based on its priority, so:
 
 1. The front sensor has 4 cycles weight.
@@ -75,7 +75,7 @@ This means that the front door sensor is checked four times for every 13 clock c
 <div align="center">
   13 States Multi Schema
 </div>
-
+<br/>
 The goal of this design is to make the 13 States Mono more effective by not just checking one sensor on each clock cycle based on its weight, but also monitoring the other sensors if a sensor's reading is low on his turn.
 
 ### Design 14253
@@ -85,7 +85,7 @@ The goal of this design is to make the 13 States Mono more effective by not just
 <div align="center">
   Design 14253 Schema
 </div>
-
+<br/>
 This design utilizes two loops, the inner one loops every single cycle on all sensors until it finds a `HIGH` signal to process, while the other one decides the beginning of the inner loop, i.e.:
 
 the inner loop can be one of 5:
@@ -116,7 +116,7 @@ In another way, the outer loop selects where to start checking, then the inner l
 <div align="center">
   Seq mono check Schema
 </div>
-
+<br/>
 We examine the reading of one sensor every clock cycle, starting with the greatest priority and working our way down, therefore we need 6 clock cycles to check the full system design. When it's time to check a sensor with a lower priority than the previous one and a high value, we ignore the previous one and update the display with the current condition, despite the lower priority.
 
 # Results
