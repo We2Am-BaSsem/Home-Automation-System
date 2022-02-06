@@ -127,56 +127,76 @@ the images below show the resulting schema from Synthesis and the resulting chip
 
 ### 13 States Mono
 
-![13 States Mono Synthesis Schema](./13StatesMono/save.png)
 
 <div align="center">
+
+  ![13 States Mono Synthesis Schema](./13StatesMono/save.png)
+
   13 States Mono Synthesis Schema
 </div>
 
-![13 States Mono Chip Design](<./13StatesMono/Screenshot(62).png>)
+  <br/>
 
 <div align="center">
+  
+  ![13 States Mono Chip Design](<./13StatesMono/Screenshot(62).png>)
+  
   13 States Mono Chip Design
 </div>
 
 ### 13 States Multi
 
-![13 States Multi Synthesis Schema](./13StatesMulti/save.png)
 
 <div align="center">
+  
+  ![13 States Multi Synthesis Schema](./13StatesMulti/save.png)
+
   13 States Multi Synthesis Schema
 </div>
 
-![13 States Multi Chip Design](<./13StatesMulti/Screenshot(63).png>)
+  <br/>
 
 <div align="center">
+  
+  ![13 States Multi Chip Design](<./13StatesMulti/Screenshot(63).png>)
+
   13 States Multi Chip Design
 </div>
 
 ### Design 14253
 
-![Design 14253 Synthesis Schema](./design14253/save.png)
 
 <div align="center">
+
+  ![Design 14253 Synthesis Schema](./design14253/save.png)
+
   Design 14253 Synthesis Schema
 </div>
-
-![13 States Multi Chip Design](<./design14253/Screenshot(64).png>)
+  
+  <br/>
 
 <div align="center">
+  
+  ![13 States Multi Chip Design](<./design14253/Screenshot(64).png>)
+
   Design 14253 Chip Design
 </div>
 
 ### Seq mono check
 
-![Seq mono check Synthesis Schema](./seq_monocheck/save.png)
 
 <div align="center">
+  
+  ![Seq mono check Synthesis Schema](./seq_monocheck/save.png)
+
   Seq mono check Synthesis Schema
 </div>
 
-![13 States Multi Chip Design](<./seq_monocheck/Screenshot(65).png>)
+  <br/>
 
 <div align="center">
+  
+  ![13 States Multi Chip Design](<./seq_monocheck/Screenshot(65).png>)
+
   Seq mono check Chip Design
 </div>
