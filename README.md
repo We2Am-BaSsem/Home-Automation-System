@@ -127,12 +127,12 @@ the images below show the resulting schema from Synthesis and the resulting chip
 
 ### 13 States Mono
 
-
 <div align="center">
 
-  ![13 States Mono Synthesis Schema](./13StatesMono/save.png)
+![13 States Mono Synthesis Schema](./13StatesMono/save.png)
 
-  13 States Mono Synthesis Schema
+13 States Mono Synthesis Schema
+
 </div>
 
   <br/>
@@ -146,12 +146,12 @@ the images below show the resulting schema from Synthesis and the resulting chip
 
 ### 13 States Multi
 
-
 <div align="center">
   
   ![13 States Multi Synthesis Schema](./13StatesMulti/save.png)
 
-  13 States Multi Synthesis Schema
+13 States Multi Synthesis Schema
+
 </div>
 
   <br/>
@@ -160,17 +160,18 @@ the images below show the resulting schema from Synthesis and the resulting chip
   
   ![13 States Multi Chip Design](<./13StatesMulti/Screenshot(63).png>)
 
-  13 States Multi Chip Design
+13 States Multi Chip Design
+
 </div>
 
 ### Design 14253
 
-
 <div align="center">
 
-  ![Design 14253 Synthesis Schema](./design14253/save.png)
+![Design 14253 Synthesis Schema](./design14253/save.png)
 
-  Design 14253 Synthesis Schema
+Design 14253 Synthesis Schema
+
 </div>
   
   <br/>
@@ -179,17 +180,18 @@ the images below show the resulting schema from Synthesis and the resulting chip
   
   ![13 States Multi Chip Design](<./design14253/Screenshot(64).png>)
 
-  Design 14253 Chip Design
+Design 14253 Chip Design
+
 </div>
 
 ### Seq mono check
-
 
 <div align="center">
   
   ![Seq mono check Synthesis Schema](./seq_monocheck/save.png)
 
-  Seq mono check Synthesis Schema
+Seq mono check Synthesis Schema
+
 </div>
 
   <br/>
@@ -198,5 +200,39 @@ the images below show the resulting schema from Synthesis and the resulting chip
   
   ![13 States Multi Chip Design](<./seq_monocheck/Screenshot(65).png>)
 
-  Seq mono check Chip Design
+Seq mono check Chip Design
+
+</div>
+
+## Comparison by Metrics
+
+• D1: 13 States Mono,
+• D2: 13 States Multi,
+• D3: 14253 Design,
+• D4: Seq Mono Check
+
+### By Time:
+
+Mesured as `(Cycle Period - Worst Slack Time)`
+
+<div align="center">
+  
+  ![Time Comparison Graph](<./Stats/TimeGraph.JPG>)
+
+Time Comparison Graph
+
+</div>
+
+### Conclusions:
+
+From These Graphs We considered optimizing `D4: Seq Mono Check`, Since it clearly has better metrics than the other designs, `D1: 13 States Mono` also was good in some metrics, we tried making some optimizations and got a score of `362`. So, D4 made more sense to work on.
+
+We tried optimizing the design itself multiple times. While that did have some effects, they were very minor. On the other hand, we changed the input delay to reach the bottleneck of the minimum slack, we found that anything below `0.3ns` input delay had no effects on the minimum slack. So we used `0.3ns` instead of the initial `0.7ns`. Below we compare the results:
+
+<div align="center">
+  
+  ![Optimizations Comparison Table](<./Stats/Table.JPG>)
+
+Optimizations Comparison Table
+
 </div>
