@@ -213,13 +213,53 @@ Seq mono check Chip Design
 
 ### By Time:
 
-Mesured as `(Cycle Period - Worst Slack Time)`
+Mesured as `(Cycle Period - Worst-case Slack Time)`
 
 <div align="center">
   
   ![Time Comparison Graph](<./Stats/TimeGraph.JPG>)
 
-Time Comparison Graph
+Time Comparison Graph (ps)
+
+</div>
+
+### By Movable Cell Area:
+
+<div align="center">
+  
+  ![Area Comparison Graph](<./Stats/AreaGraph.JPG>)
+
+Area Comparison Graph (sq µm)
+
+</div>
+
+### By Total Power:
+
+<div align="center">
+  
+  ![Power Comparison Graph](<./Stats/PowerGraph.JPG>)
+
+Power Comparison Graph (µw)
+
+</div>
+
+### By Weighted Score:
+
+Formula: `Score = 0.5 * Movable Cell Area in squm + 0.3 * (clock period in ps - worst case slack in ps) + 0.2 * total power in uw`
+
+<div align="center">
+  
+  ![Weighted Metrics according to Formula](<./Stats/WeightedMetrics.JPG>)
+
+Weighted Metrics according to Formula
+
+</div>
+
+<div align="center">
+  
+  ![Weighted Scores according to Formula](<./Stats/WeightedScore.JPG>)
+
+Weighted Scores according to Formula
 
 </div>
 
