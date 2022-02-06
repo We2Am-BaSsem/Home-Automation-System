@@ -54,6 +54,10 @@ We worked on 4 different designs with resonable assumptions to solve this proble
 
 ![13 States Mono Schema](./13StatesMono/13StatesMono.png)
 
+<div align="center">
+  13 States Mono Schema
+</div>
+
 Rather than checking the sensors on each cycle based on their priority, we check the sensors on 13 cycles, with each sensor having a higher weight based on its priority, so:
 
 1. The front sensor has 4 cycles weight.
@@ -68,11 +72,19 @@ This means that the front door sensor is checked four times for every 13 clock c
 
 ![13 States Multi Schema](./13StatesMulti/13StatesMulti.png)
 
+<div align="center">
+  13 States Multi Schema
+</div>
+
 The goal of this design is to make the 13 States Mono more effective by not just checking one sensor on each clock cycle based on its weight, but also monitoring the other sensors if a sensor's reading is low on his turn.
 
 ### Design 14253
 
 ![Design 14253 Schema](./design14253/design14253.png)
+
+<div align="center">
+  Design 14253 Schema
+</div>
 
 This design utilizes two loops, the inner one loops every single cycle on all sensors until it finds a `HIGH` signal to process, while the other one decides the beginning of the inner loop, i.e.:
 
@@ -101,4 +113,70 @@ In another way, the outer loop selects where to start checking, then the inner l
 
 ![Seq mono check Schema](./seq_monocheck/seq_monocheck.png)
 
+<div align="center">
+  Seq mono check Schema
+</div>
+
 We examine the reading of one sensor every clock cycle, starting with the greatest priority and working our way down, therefore we need 6 clock cycles to check the full system design. When it's time to check a sensor with a lower priority than the previous one and a high value, we ignore the previous one and update the display with the current condition, despite the lower priority.
+
+# Results
+
+### Synthesis & Floor Planning
+
+the images below show the resulting schema from Synthesis and the resulting chip design from Floor Planning per design
+
+#### 13 States Mono
+
+![13 States Mono Synthesis Schema](./13StatesMono/save.png)
+
+<div align="center">
+  13 States Mono Synthesis Schema
+</div>
+
+![13 States Mono Chip Design](<./13StatesMono/Screenshot(62).png>)
+
+<div align="center">
+  13 States Mono Chip Design
+</div>
+
+#### 13 States Multi
+
+![13 States Multi Synthesis Schema](./13StatesMulti/save.png)
+
+<div align="center">
+  13 States Multi Synthesis Schema
+</div>
+
+![13 States Multi Chip Design](<./13StatesMulti/Screenshot(63).png>)
+
+<div align="center">
+  13 States Multi Chip Design
+</div>
+
+#### Design 14253
+
+![Design 14253 Synthesis Schema](./design14253/save.png)
+
+<div align="center">
+  Design 14253 Synthesis Schema
+</div>
+
+![13 States Multi Chip Design](<./design14253/Screenshot(64).png>)
+
+<div align="center">
+  Design 14253 Chip Design
+</div>
+
+#### Seq mono check
+
+![Seq mono check Synthesis Schema](./seq_monocheck/save.png)
+
+<div align="center">
+  Seq mono check Synthesis Schema
+</div>
+
+![13 States Multi Chip Design](<./seq_monocheck/Screenshot(65).png>)
+
+<div align="center">
+  Seq mono check Chip Design
+</div>
