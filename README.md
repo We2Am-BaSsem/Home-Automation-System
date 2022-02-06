@@ -71,7 +71,7 @@ The goal of this design is to make the 13 States Mono more effective by not just
 
 ### Design 14253
 
-![Design 14253 Schema](./design14253/Design14253.png)
+![Design 14253 Schema](./design14253/design14253.png)
 
 This design utilizes two loops, the inner one loops every single cycle on all sensors until it finds a `HIGH` signal to process, while the other one decides the beginning of the inner loop, i.e.:
 the inner loop can be one of 5:
