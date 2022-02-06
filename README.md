@@ -121,11 +121,11 @@ We examine the reading of one sensor every clock cycle, starting with the greate
 
 # Results
 
-### Synthesis & Floor Planning
+## Synthesis & Floor Planning
 
 the images below show the resulting schema from Synthesis and the resulting chip design from Floor Planning per design
 
-#### 13 States Mono
+### 13 States Mono
 
 ![13 States Mono Synthesis Schema](./13StatesMono/save.png)
 
@@ -139,7 +139,7 @@ the images below show the resulting schema from Synthesis and the resulting chip
   13 States Mono Chip Design
 </div>
 
-#### 13 States Multi
+### 13 States Multi
 
 ![13 States Multi Synthesis Schema](./13StatesMulti/save.png)
 
@@ -153,7 +153,7 @@ the images below show the resulting schema from Synthesis and the resulting chip
   13 States Multi Chip Design
 </div>
 
-#### Design 14253
+### Design 14253
 
 ![Design 14253 Synthesis Schema](./design14253/save.png)
 
@@ -167,7 +167,7 @@ the images below show the resulting schema from Synthesis and the resulting chip
   Design 14253 Chip Design
 </div>
 
-#### Seq mono check
+### Seq mono check
 
 ![Seq mono check Synthesis Schema](./seq_monocheck/save.png)
 
