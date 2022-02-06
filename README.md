@@ -9,14 +9,15 @@ This is a VLSI project where we used Synthesis, Placing & Routing on our hardwar
 ### Problem specification
 
 Home automation involves a number of factors including:
-• **Security**: where the system is concerned with home intrusion detection
-and avoidance.
+
+• **Security**: where the system is concerned with home intrusion detection and avoidance.
+
 • **Environment factors**: such as temperature and fire detection.
 
 The system is designed to control the doors, windows, fire alarm and the temperature. Each process being automated is associated with a sensor.
 
-• When the sensor is `LOW (0)` then no action is needed, and the next
-device can be checked.
+• When the sensor is `LOW (0)` then no action is needed, and the next device can be checked.
+
 • When the sensor is `HIGH (1)` then an action is needed.
 
 Sensors include:
@@ -74,6 +75,7 @@ The goal of this design is to make the 13 States Mono more effective by not just
 ![Design 14253 Schema](./design14253/design14253.png)
 
 This design utilizes two loops, the inner one loops every single cycle on all sensors until it finds a `HIGH` signal to process, while the other one decides the beginning of the inner loop, i.e.:
+
 the inner loop can be one of 5:
 
 ```
@@ -85,6 +87,7 @@ the inner loop can be one of 5:
 ```
 
 the outer loop decides which one.
+
 In another way, the outer loop selects where to start checking, then the inner loop stops when it finds a `HIGH` signal or outputs `ZERO` if none is found. The trick is, the Start of checking is `1, 4, 2, 5, 3` instead of the usual `1, 2, 3, 4, 5.` This distributes the checked signals more evenly compared to the naive way. In a third way, this design checks signals like this:
 
 1. first cycle: `1->2->3->4->5`.
