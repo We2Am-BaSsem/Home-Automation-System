@@ -52,7 +52,7 @@ We worked on 4 different designs with resonable assumptions to solve this proble
 
 ### 13 States Mono
 
-![13 States Mono Schema](./13StatesMono/13StatesMono.png)
+![13 States Mono Schema](./13StatesMono/13StatesMono.jpg)
 
 <div align="center">
   13 States Mono Schema
