@@ -1,7 +1,20 @@
 <h1 align="center">
   Home-Automation-System
 </h1>
-
+<p align="center">
+  <a style="text-decoration:none" >
+    <img src="https://img.shields.io/badge/Language-Verilog-blue" alt="Language Badge" />
+  </a>
+  <a style="text-decoration:none" >
+    <img src="https://img.shields.io/badge/Simulation Tool-ModelSim-green" alt="Simulation Tool Badge" />
+  </a>
+  <a style="text-decoration:none" >
+    <img src="https://img.shields.io/badge/Synthesis Tool-Oasys-green" alt="Synthesis Tool Badge" />
+  </a>
+  <a style="text-decoration:none" >
+    <img src="https://img.shields.io/badge/Floor Planning-NitroSoC-green" alt="Floor Planning Tool Badge" />
+  </a>
+</p>
 # Overview
 
 This is a VLSI project where we used Synthesis, Placing & Routing on our hardware designs to achieve best performance for the given requirements.
