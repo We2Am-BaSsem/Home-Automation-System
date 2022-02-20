@@ -15,6 +15,7 @@
     <img src="https://img.shields.io/badge/Floor Planning-NitroSoC-green" alt="Floor Planning Tool Badge" />
   </a>
 </p>
+
 # Overview
 
 This is a VLSI project where we used Synthesis, Placing & Routing on our hardware designs to achieve best performance for the given requirements.
